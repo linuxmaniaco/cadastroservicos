@@ -22,3 +22,12 @@ spring:
         dialect: org.hibernate.dialect.MySQLDialect
         ddl-auto: update
       show-sql: true
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          private:
+            key: classpath:app.key
+          public:
+            key: classpath:app.pub
+
